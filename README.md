@@ -4,7 +4,8 @@
 
 | # Day |                                                 Topics                                                  |
 | ----- | :-----------------------------------------------------------------------------------------------------: |
-| 01    |                                       [Introduction](./readme.md)                                       |
+| 01    |                                [Introduction](./Day_One/introduccion.py                                 |
+| )     |
 | 02    | [Variables, Built-in Functions](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md) |
 | 03    |                             [Operators](./03_Day_Operators/03_operators.md)                             |
 | 04    |                                [Strings](./04_Day_Strings/04_strings.md)                                |
