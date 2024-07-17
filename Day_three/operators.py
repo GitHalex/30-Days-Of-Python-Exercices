@@ -94,3 +94,10 @@ horas = int(input("Ingrese la cantidad de horas: "))
 trabajoHora = int(input("Ingrese la cantidad de horas tranajadas: "))
 gana = horas * trabajoHora
 print(gana)
+
+years = 100
+print(f"You have lived for {100*360*24*60*60}")
+
+
+for num in range(1, 6):
+  print(f"{num}\t{num**0}\t{num**1}\t{num**2}\t{num**3}")
