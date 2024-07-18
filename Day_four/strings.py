@@ -58,3 +58,30 @@ phrase = 'You cannot end a sentence with because because because is a conjunctio
 print(phrase.find("because"))
 
 print(phrase.rindex("because"))
+
+primeroBecause = phrase.find("because")
+segundoBecause = phrase.rfind("because")
+
+print(type(primeroBecause))
+
+resultado = phrase[primeroBecause:segundoBecause + 7]
+print(resultado)
+
+
+# Define la cadena
+string = "Coding For All"
+
+# Comprueba si la cadena comienza con la subcadena "Coding"
+starts_with_coding = string.startswith("Coding")
+# Muestra el resultado
+print(f"Does 'Coding For All' start with the substring 'Coding'? {starts_with_coding}")
+
+cadena = '   coding For All    '
+print(cadena.strip())
+
+var = "30DaysOfPython"
+var2 = "thirty_days_of_python"
+print(var.isidentifier())
+print(var2.isidentifier())
+print("def".isidentifier())
+
