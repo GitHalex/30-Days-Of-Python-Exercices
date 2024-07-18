@@ -38,3 +38,10 @@ print(arregloCompanies)
 
 print(company[0])
 print(company[-1])
+print(company[10])
+
+
+palabraAcronimo = "Python For All"
+
+acronimo = palabraAcronimo.split(" ")
+print(acronimo[0][0] + acronimo[1][0] + acronimo[2][0])
