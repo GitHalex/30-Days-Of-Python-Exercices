@@ -36,4 +36,5 @@ companies = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
 arregloCompanies = companies.split(",")
 print(arregloCompanies)
 
-print(company.rfind(0))
+print(company[0])
+print(company[-1])
