@@ -7,8 +7,31 @@ respuesta = palabra1 + " " + palabra2 + " " + palabra3 + " " + palabra4
 print(respuesta)
 
 company = "Coding for All"
+
 print(f"Variable: {company}")
+
 print(f"tamaño: {len(company)}")
+
 print(f"En MAYUSCULAS: {company.upper()}")
+
 print(f"EN MINUSCULAS: {company.lower()}")
+
 print(f"capitalize: {company.capitalize()} => title: {company.title()} => swapcase: {company.swapcase()}")
+
+primeraPalabra = company[:7]
+print(f"Primera palabra: {primeraPalabra}")
+
+print(company.index("Coding"))
+print(company.find("Coding"))
+
+print(company.replace("Coding", "Python"))
+
+print("Esto es otro")
+
+print("Python for Everyone".replace("Everyone", "All"))
+
+print(company.split(" "))
+
+companies = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+arregloCompanies = companies.split(",")
+print(arregloCompanies)
