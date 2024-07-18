@@ -41,10 +41,15 @@ print(company[-1])
 print(company[10])
 
 
-palabraAcronimo = "Python For All"
+palabraAcronimo = "Python For All people"
 
 acronimo = palabraAcronimo.split(" ")
 print(acronimo[0][0] + acronimo[1][0] + acronimo[2][0])
 
 acronimoCompani = company.split(" ")
 print(acronimoCompani[0][0] + acronimoCompani[1][0] + acronimoCompani[2][0])
+
+print(company.index("C"))
+print(company.index("f"))
+
+print(palabraAcronimo.rindex("l"))
