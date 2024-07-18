@@ -45,3 +45,6 @@ palabraAcronimo = "Python For All"
 
 acronimo = palabraAcronimo.split(" ")
 print(acronimo[0][0] + acronimo[1][0] + acronimo[2][0])
+
+acronimoCompani = company.split(" ")
+print(acronimoCompani[0][0] + acronimoCompani[1][0] + acronimoCompani[2][0])
