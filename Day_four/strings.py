@@ -85,3 +85,23 @@ print(var.isidentifier())
 print(var2.isidentifier())
 print("def".isidentifier())
 
+pythonLibraries = ["Django","Flask","Bottle","Pyramid","Falcon"]
+cadenaLibraries = "-".join(pythonLibraries)
+print(cadenaLibraries)
+
+print("I am enjoying this challenge\nI just wonder what is next.")
+
+print("Name\tAge\tCountry\tCity\nAlex\t250\tFinland\tChacobamba")
+
+radius = 10
+area = 3.14 * radius ** 2
+
+print(f"The area of a circle with radius {radius} is {area} meters square.")
+
+number = 8
+number1 = 6
+
+print(f"{number} + {number1} => {number+number1}\n{number} - {number1} => {number-number1}")
+print(f"{number} x {number1} => {number*number1}\n{number} / {number1} => {round(number/number1, 2)}")
+print(f"{number} % {number1} => {number%number1}\n{number} // {number1} => {number//number1}")
+print(f"{number} ** {number1} => {number**number1}")
