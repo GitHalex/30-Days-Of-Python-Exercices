@@ -37,24 +37,31 @@ print(it_companies)
 juntsr = " #".join(it_companies)
 print(juntsr)
 # Check if a certain company exists in the it_companies list.
-
+print(it_companies.index("HH"))
 # Sort the list using sort() method
-
+it_companies.sort()
+print(it_companies)
 # Reverse the list in descending order using reverse() method
-
+it_companies.sort(reverse=True)
+print(it_companies)
 # Slice out the first 3 companies from the list
-juntsr = " #".join(it_companies)
-
+primerosTres = it_companies[:3]
+print(primerosTres)
 # Slice out the last 3 companies from the list
-
+ultimosTres = it_companies[-3:]
+print(ultimosTres)
 # Slice out the middle IT company or companies from the list
-
+print(it_companies[4])
 # Remove the first IT company from the list
-
+it_companies.pop(0)
+print(it_companies)
 # Remove the middle IT company or companies from the list
-
+print(it_companies.remove("HH"))
 # Remove the last IT company from the list
-
+it_companies.pop()
+print(it_companies)
 # Remove all IT companies from the list
-
+it_companies.clear()
+print(it_companies)
 # Destroy the IT companies list
+del it_companies
