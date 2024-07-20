@@ -18,3 +18,12 @@ family_members.append("Mother")
 print(family_members)
 enTuplaMiembros = tuple(family_members)
 print(enTuplaMiembros)
+
+familiaOrdenada = sorted(family_members)
+
+a, b, *cd, e, f, g, h = familiaOrdenada
+
+print(cd)
+print(e)
+print(h)
+
