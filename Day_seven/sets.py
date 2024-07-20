@@ -18,3 +18,12 @@ print(it_companies)
 
 print(it_companies.discard("IBM"))
 print(it_companies)
+
+print(A)
+print(B)
+
+a_b = A.union(B)
+print(a_b)
+
+interA_B = A.intersection(B)
+print(interA_B)
