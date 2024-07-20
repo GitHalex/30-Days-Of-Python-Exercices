@@ -27,3 +27,22 @@ print(a_b)
 
 interA_B = A.intersection(B)
 print(interA_B)
+
+sub = A.issubset(B)
+print(sub)
+
+ab = A.difference(B)
+print(ab)
+
+b_a = B.union(A)
+print(b_a)
+
+
+print(A.difference(B))
+
+ageSet = set(age)
+print(ageSet)
+
+frase = "I am a teacher and I love to inspire and teach people"
+palabras_unicas = set(frase.split(" "))
+print(palabras_unicas)
