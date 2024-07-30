@@ -62,8 +62,33 @@ person={
 
 print(person)
 
-if person.get("skills"):
-  tam = len(person['skills']) // 2
-  print(f"{person['skills'][tam]}")
+# Verificar si el diccionario tiene la clave 'skills'
+if 'skills' in person:
+    skills = person['skills']
+    
+    # Imprimir la habilidad del medio en la lista de habilidades
+    middle_index = len(skills) // 2
+    print(f"La habilidad del medio es: {skills[middle_index]}")
+    
+    # Verificar si la persona tiene la habilidad 'Python' y imprimir el resultado
+    has_python = 'Python' in skills
+    print(f"Tiene habilidad en Python: {has_python}")
+    
+    # Determinar el título del desarrollador basado en las habilidades
+    if 'JavaScript' in skills and 'React' in skills and 'Node' not in skills and 'MongoDB' not in skills and 'Python' not in skills:
+        print('Él es un desarrollador de frontend.')
+    elif 'Node' in skills and 'Python' in skills and 'MongoDB' in skills:
+        print('Él es un desarrollador de backend.')
+    elif 'React' in skills and 'Node' in skills and 'MongoDB' in skills:
+        print('Él es un desarrollador fullstack.')
+    else:
+        print('Título desconocido.')
+
+# Verificar si la persona está casada y vive en Finlandia
+if person.get('is_married') and person.get('country') == 'Finland':
+    first_name = person['first_name']
+    last_name = person['last_name']
+    country = person['country']
+    print(f"{first_name} {last_name} es casado y vive en {country}.")
 
 
