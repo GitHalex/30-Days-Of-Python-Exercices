@@ -45,7 +45,8 @@ if fruta in fruits:
   print(f"That fruit already exist in the list: {fruits}")
 else:
   fruits.append(fruta) """
-  
+from math import floor
+
 person={
     'first_name': 'Asabeneh',
     'last_name': 'Yetayeh',
@@ -60,3 +61,9 @@ person={
 }
 
 print(person)
+
+if person.get("skills"):
+  tam = len(person['skills']) // 2
+  print(f"{person['skills'][tam]}")
+
+
