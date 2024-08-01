@@ -17,3 +17,9 @@ i = 10
 while i >= 0:
   print(i)
   i -= 1
+
+character = "#"
+for i in range(1, 8):
+  
+  # character += character
+  print(character*i)
