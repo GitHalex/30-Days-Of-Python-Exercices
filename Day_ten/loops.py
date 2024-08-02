@@ -48,7 +48,7 @@ for number in range(101):
   if number % 2 != 0:
     print(number) """
 
-sumaTotal = 0
+""" sumaTotal = 0
 sumPares = 0
 sumImpares = 0
 for i in range(101):
@@ -59,4 +59,5 @@ for i in range(101):
   sumaTotal += i
 
 print(f"the sum of all numbers is {sumaTotal}")
-print(f"The sum os all evens is {sumPares}. And the sum of all odds is {sumImpares}")
+print(f"The sum os all evens is {sumPares}. And the sum of all odds is {sumImpares}")"""
+
