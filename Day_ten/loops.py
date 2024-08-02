@@ -34,15 +34,29 @@ for i in range(1, 8):
   print(f"{number} x {number} = {number*number}") """
 
 
-techonologies = ["Python","Numpy","Pandas","Django","Flask"]
+""" techonologies = ["Python","Numpy","Pandas","Django","Flask"]
 for tech in techonologies:
-  print(tech)
+  print(tech) """
 
-print("Pares")
+""" print("Pares")
 for number in range(101):
   if number % 2 == 0:
-    print(number)
-print("Impares")
+    print(number) """
+
+""" print("Impares")
 for number in range(101):
   if number % 2 != 0:
-    print(number)
+    print(number) """
+
+sumaTotal = 0
+sumPares = 0
+sumImpares = 0
+for i in range(101):
+  if i % 2 == 0:
+    sumPares += i
+  else:
+    sumImpares += i
+  sumaTotal += i
+
+print(f"the sum of all numbers is {sumaTotal}")
+print(f"The sum os all evens is {sumPares}. And the sum of all odds is {sumImpares}")
