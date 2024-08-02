@@ -197,3 +197,10 @@ countries = [
 for pais in countries:
   if "land" in pais:
     print(pais)
+
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+tam = len(fruits) - 1
+while tam >= 0:
+  print(fruits[tam])
+  tam -= 1
