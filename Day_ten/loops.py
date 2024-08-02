@@ -29,3 +29,7 @@ for i in range(1, 8):
 # syntax
 for x in range(1, 8):
   print("########")
+
+
+for number in range(11):
+  print(f"{number} x {number} = {number*number}")
