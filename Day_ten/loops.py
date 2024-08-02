@@ -23,3 +23,9 @@ for i in range(1, 8):
   
   # character += character
   print(character*i)
+
+
+
+# syntax
+for x in range(1, 8):
+  print("########")
