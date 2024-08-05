@@ -14,6 +14,16 @@ def areaOfCircle(radio: int) -> float:
 print(areaOfCircle(2))
 ##########################
 
+def addAllNums(*argumentos: int) -> float:
+  suma = 0
+  for arg in argumentos:
+    if isinstance(arg, (int, float)):
+      suma += arg
+    else:
+      return f"Error: '{arg} no es un numero.  Please provide only numeric values'"
 
-
+  return suma
+print(addAllNums(1, 2, 3.5))  # Should return 6.5
+print(addAllNums(1, 'two', 3))  # Should return an error message
+#########################################################3
 
