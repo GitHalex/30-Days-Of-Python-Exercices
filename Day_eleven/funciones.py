@@ -25,5 +25,86 @@ def addAllNums(*argumentos: int) -> float:
   return suma
 print(addAllNums(1, 2, 3.5))  # Should return 6.5
 print(addAllNums(1, 'two', 3))  # Should return an error message
-#########################################################3
+#########################################################
+
+def convertCelsiusToFahrenheit(C: int) -> float:
+  F = (C*9/5) + 32
+  return F
+
+print(convertCelsiusToFahrenheit(2))
+####################################################3
+
+def checkSeason(mes: str) -> None:
+  match mes:
+    case "diciembre" | "enero" | "febrero":
+      print("Invierno")
+    case "marzo" | "abril" | "mayo":
+      print("Primavera")
+    case "junio" | "julio" | "agosto":
+      print("Verano")
+    case "septiembre" | "octubre" | "noviembre":
+      print("Otoño")
+    case _:
+      print(f" {mes}: Mes no correspondiente")
+ 
+mes = input("Ingrese una mes: ").lower()
+checkSeason(mes)
+
+
+
+def calculate_slope(x1, y1, x2, y2):
+    """Calculate the slope of a line given two points (x1, y1) and (x2, y2).
+    
+    Args:
+        x1, y1: Coordinates of the first point.
+        x2, y2: Coordinates of the second point.
+
+    Returns:
+        The slope of the line connecting the two points.
+    """
+    if x1 == x2:
+        raise ValueError("The slope is undefined (vertical line).")
+    
+    slope = (y2 - y1) / (x2 - x1)
+    return slope
+
+# Example usage
+try:
+    m = calculate_slope(1, 2, 4, 8)
+    print(f"The slope of the line is: {m}")
+except ValueError as e:
+    print(e)
+######################################33
+
+from math import sqrt
+
+print("Programa para la resolucion de la ecuacion x*x + b*x + c = 0")
+
+def solveQuadraticeqn(a: int, b: int, c: int) -> None:
+
+  if a != 0:
+    discriminante = b**2 - 4*a*c
+    if discriminante >= 0:
+      x1 = (-b + sqrt(discriminante)) /(2*a)
+      x2 = (-b - sqrt(discriminante)) /(2*a)
+      if x1 == x2:
+        print(f"Solucion: x1={x1}")
+      else:
+        print(f"Solucion: x1={x1} -> x2={x2}")
+    else:
+      print("No hay soluciones reales")
+  else:
+    if b != 0:
+      x = -c/b
+      print(f"Solucion: x={x}")
+    else:
+      if c != 0:
+        print("La ecuacion no tiene solucion")
+      else:
+        print("La ecuacion tiene infinitas soluciones")
+
+a = int(input("Ingrese el valor de a: "))
+b = int(input("Ingrese el valor de b: "))
+c = int(input("ingrese el valor de c: "))
+solveQuadraticeqn(a, b, c)
 
