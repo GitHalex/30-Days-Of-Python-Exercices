@@ -131,8 +131,16 @@ def capitalizeListItems(names: list) -> list:
 print(capitalizeListItems(["Alex", "Ana", "juan"]))
 ##############################################3
 
-def add_item():
-  pass
+def add_item(food_staf: list, food: str):
+  if food not in food_staf:
+    food_staf.append(food)
+  
+  return food_staf
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk'];
+print(add_item(food_staff, 'Meat'))     # ['Potato', 'Tomato', 'Mango', 'Milk','Meat'];
+numbers = [2, 3, 7, 9];
+print(add_item(numbers, 5))
+#########################################
 
 def remove_item(listaFoods: list, food: str) -> list:
   listaRes = []
@@ -146,3 +154,6 @@ def remove_item(listaFoods: list, food: str) -> list:
 
 food_staff = ['Potato', 'Tomato', 'Mango', 'Milk'];
 print(remove_item(food_staff, 'Mango'))
+numbers = [2, 3, 7, 9];
+print(remove_item(numbers, 3))
+#################################################
