@@ -120,3 +120,29 @@ def reverse_list(numbers: list) -> list:
 
 print(reverse_list([1,2,3,4,5]))
 print(reverse_list(["A", "B", "C"]))
+
+def capitalizeListItems(names: list) -> list:
+  mayusculas = []
+  for name in names:
+    mayusculas.append(name.upper())
+
+  return mayusculas
+
+print(capitalizeListItems(["Alex", "Ana", "juan"]))
+##############################################3
+
+def add_item():
+  pass
+
+def remove_item(listaFoods: list, food: str) -> list:
+  listaRes = []
+  for j in listaFoods:
+    if  food == j:
+      listaFoods.remove(j)
+    
+  listaRes = listaFoods
+
+  return listaRes
+
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk'];
+print(remove_item(food_staff, 'Mango'))
