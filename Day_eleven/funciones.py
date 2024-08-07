@@ -1,20 +1,20 @@
-def add_two_numbers(num1: int, num2: int) -> int:
+""" def add_two_numbers(num1: int, num2: int) -> int:
   return num1 + num2
 
 print(add_two_numbers(2, 2))
-print(add_two_numbers("2", "3"))
+print(add_two_numbers("2", "3")) """
 ####################
 
-from math import pi
+""" from math import pi
 
 def areaOfCircle(radio: int) -> float:
   area = pi*radio**2
   return round(area, 2)
 
-print(areaOfCircle(2))
+print(areaOfCircle(2)) """
 ##########################
 
-def addAllNums(*argumentos: int) -> float:
+""" def addAllNums(*argumentos: int) -> float:
   suma = 0
   for arg in argumentos:
     if isinstance(arg, (int, float)):
@@ -24,7 +24,7 @@ def addAllNums(*argumentos: int) -> float:
 
   return suma
 print(addAllNums(1, 2, 3.5))  # Should return 6.5
-print(addAllNums(1, 'two', 3))  # Should return an error message
+print(addAllNums(1, 'two', 3))  # Should return an error message """
 #########################################################
 
 def convertCelsiusToFahrenheit(C: int) -> float:
@@ -34,7 +34,7 @@ def convertCelsiusToFahrenheit(C: int) -> float:
 print(convertCelsiusToFahrenheit(2))
 ####################################################3
 
-def checkSeason(mes: str) -> None:
+""" def checkSeason(mes: str) -> None:
   match mes:
     case "diciembre" | "enero" | "febrero":
       print("Invierno")
@@ -53,7 +53,7 @@ checkSeason(mes)
 
 
 def calculate_slope(x1, y1, x2, y2):
-    """Calculate the slope of a line given two points (x1, y1) and (x2, y2).
+    Calculate the slope of a line given two points (x1, y1) and (x2, y2).
     
     Args:
         x1, y1: Coordinates of the first point.
@@ -61,7 +61,7 @@ def calculate_slope(x1, y1, x2, y2):
 
     Returns:
         The slope of the line connecting the two points.
-    """
+    
     if x1 == x2:
         raise ValueError("The slope is undefined (vertical line).")
     
@@ -73,10 +73,10 @@ try:
     m = calculate_slope(1, 2, 4, 8)
     print(f"The slope of the line is: {m}")
 except ValueError as e:
-    print(e)
+    print(e) """
 ######################################33
 
-from math import sqrt
+""" from math import sqrt
 
 print("Programa para la resolucion de la ecuacion x*x + b*x + c = 0")
 
@@ -106,5 +106,17 @@ def solveQuadraticeqn(a: int, b: int, c: int) -> None:
 a = int(input("Ingrese el valor de a: "))
 b = int(input("Ingrese el valor de b: "))
 c = int(input("ingrese el valor de c: "))
-solveQuadraticeqn(a, b, c)
+solveQuadraticeqn(a, b, c) """
+#########################################
 
+def printList(lista: list) -> None:
+  for i in lista:
+    print(i)
+
+printList(["Alex", "Calcina", True, 2.3, 2024])
+
+def reverse_list(numbers: list) -> list:
+  return numbers[::-1]
+
+print(reverse_list([1,2,3,4,5]))
+print(reverse_list(["A", "B", "C"]))
