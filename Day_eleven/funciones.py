@@ -157,3 +157,34 @@ print(remove_item(food_staff, 'Mango'))
 numbers = [2, 3, 7, 9];
 print(remove_item(numbers, 3))
 #################################################
+
+def sum_of_numbers(numero: int) -> float:
+  sumTotal = 0
+  for i in range(1, numero+1):
+    sumTotal += i
+
+  return sumTotal
+
+print(sum_of_numbers(5)) 
+print(sum_of_numbers(10)) 
+#####################################
+
+def sum_of_odds(numero: int) -> float:
+  sumOdds = 0
+  for i in range(1, numero+1):
+    if i % 2 == 0:
+      sumOdds += i
+
+  return sumOdds
+
+print(sum_of_odds(10))
+
+def sum_of_evens(numero: int) -> float:
+  sumEvens = 0
+  for i in range(1, numero+1):
+    if i % 2 != 0:
+      sumEvens += i
+
+  return sumEvens
+
+print(sum_of_evens(10))
