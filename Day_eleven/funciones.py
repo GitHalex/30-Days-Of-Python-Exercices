@@ -109,7 +109,7 @@ c = int(input("ingrese el valor de c: "))
 solveQuadraticeqn(a, b, c) """
 #########################################
 
-def printList(lista: list) -> None:
+""" def printList(lista: list) -> None:
   for i in lista:
     print(i)
 
@@ -128,10 +128,10 @@ def capitalizeListItems(names: list) -> list:
 
   return mayusculas
 
-print(capitalizeListItems(["Alex", "Ana", "juan"]))
+print(capitalizeListItems(["Alex", "Ana", "juan"])) """
 ##############################################3
 
-def add_item(food_staf: list, food: str):
+""" def add_item(food_staf: list, food: str):
   if food not in food_staf:
     food_staf.append(food)
   
@@ -139,10 +139,10 @@ def add_item(food_staf: list, food: str):
 food_staff = ['Potato', 'Tomato', 'Mango', 'Milk'];
 print(add_item(food_staff, 'Meat'))     # ['Potato', 'Tomato', 'Mango', 'Milk','Meat'];
 numbers = [2, 3, 7, 9];
-print(add_item(numbers, 5))
+print(add_item(numbers, 5)) """
 #########################################
 
-def remove_item(listaFoods: list, food: str) -> list:
+""" def remove_item(listaFoods: list, food: str) -> list:
   listaRes = []
   for j in listaFoods:
     if  food == j:
@@ -155,10 +155,10 @@ def remove_item(listaFoods: list, food: str) -> list:
 food_staff = ['Potato', 'Tomato', 'Mango', 'Milk'];
 print(remove_item(food_staff, 'Mango'))
 numbers = [2, 3, 7, 9];
-print(remove_item(numbers, 3))
+print(remove_item(numbers, 3)) """
 #################################################
 
-def sum_of_numbers(numero: int) -> float:
+""" def sum_of_numbers(numero: int) -> float:
   sumTotal = 0
   for i in range(1, numero+1):
     sumTotal += i
@@ -166,10 +166,10 @@ def sum_of_numbers(numero: int) -> float:
   return sumTotal
 
 print(sum_of_numbers(5)) 
-print(sum_of_numbers(10)) 
+print(sum_of_numbers(10)) """ 
 #####################################
 
-def sum_of_odds(numero: int) -> float:
+""" def sum_of_odds(numero: int) -> float:
   sumOdds = 0
   for i in range(1, numero+1):
     if i % 2 == 0:
@@ -177,7 +177,7 @@ def sum_of_odds(numero: int) -> float:
 
   return sumOdds
 
-print(sum_of_odds(10))
+print(sum_of_odds(100))
 
 def sum_of_evens(numero: int) -> float:
   sumEvens = 0
@@ -187,4 +187,21 @@ def sum_of_evens(numero: int) -> float:
 
   return sumEvens
 
-print(sum_of_evens(10))
+print(sum_of_evens(100)) """
+#########################################
+
+def evens_and_odds(numero: int) -> list:
+  sumEvens = 0
+  sumOdds = 0
+
+  for i in range(0, numero + 1):
+    if i % 2 == 0:
+      sumEvens += 1
+    else:
+      sumOdds += 1
+
+  return [sumEvens, sumOdds]
+
+pares, impares = evens_and_odds(100)
+print(pares)
+print(impares)
