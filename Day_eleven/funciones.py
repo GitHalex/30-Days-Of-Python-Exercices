@@ -190,7 +190,7 @@ def sum_of_evens(numero: int) -> float:
 print(sum_of_evens(100)) """
 #########################################
 
-def evens_and_odds(numero: int) -> list:
+""" def evens_and_odds(numero: int) -> list:
   sumEvens = 0
   sumOdds = 0
 
@@ -204,4 +204,38 @@ def evens_and_odds(numero: int) -> list:
 
 pares, impares = evens_and_odds(100)
 print(pares)
-print(impares)
+print(impares) """
+##############################################
+
+""" def factorial(number: int) -> int:
+  res = 1
+  for i in range(number, 0, -1):
+    res *= i
+
+  return res
+
+print(factorial(3))
+print(factorial(4)) """
+#########################################
+
+
+def is_empty(param):
+    """Check if the provided parameter is empty or not.
+    
+    Args:
+        param: The parameter to check.
+
+    Returns:
+        True if the parameter is empty, False otherwise.
+    """
+    return not bool(param)
+
+# Example usage
+print(is_empty(""))           # True (empty string)
+print(is_empty("Hello"))      # False (non-empty string)
+print(is_empty([]))           # True (empty list)
+print(is_empty([1, 2, 3]))    # False (non-empty list)
+print(is_empty({}))           # True (empty dictionary)
+print(is_empty({'key': 'value'}))  # False (non-empty dictionary)
+print(is_empty(0))            # True (0 is considered empty)
+print(is_empty(1))            # False (non-zero integers are not empty)
