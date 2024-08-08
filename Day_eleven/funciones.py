@@ -239,3 +239,55 @@ print(is_empty({}))           # True (empty dictionary)
 print(is_empty({'key': 'value'}))  # False (non-empty dictionary)
 print(is_empty(0))            # True (0 is considered empty)
 print(is_empty(1))            # False (non-zero integers are not empty)
+
+""" Write different functions which take lists. They should calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (standard deviation). """
+
+
+from typing import List
+from collections import Counter
+import math
+
+def calculate_mean(numbers: List[float]) -> float:
+    """Calculate the mean of a list of numbers."""
+    return sum(numbers) / len(numbers)
+
+def calculate_median(numbers: List[float]) -> float:
+    """Calculate the median of a list of numbers."""
+    sorted_numbers = sorted(numbers)
+    n = len(sorted_numbers)
+    middle = n // 2
+    if n % 2 == 0:
+        return (sorted_numbers[middle - 1] + sorted_numbers[middle]) / 2
+    else:
+        return sorted_numbers[middle]
+
+def calculate_mode(numbers: List[float]) -> float:
+    """Calculate the mode of a list of numbers."""
+    counter = Counter(numbers)
+    most_common = counter.most_common(1)
+    return most_common[0][0]
+
+def calculate_range(numbers: List[float]) -> float:
+    """Calculate the range of a list of numbers."""
+    return max(numbers) - min(numbers)
+
+def calculate_variance(numbers: List[float]) -> float:
+    """Calculate the variance of a list of numbers."""
+    mean = calculate_mean(numbers)
+    squared_diffs = [(x - mean) ** 2 for x in numbers]
+    return sum(squared_diffs) / len(numbers)
+
+def calculate_std(numbers: List[float]) -> float:
+    """Calculate the standard deviation of a list of numbers."""
+    variance = calculate_variance(numbers)
+    return math.sqrt(variance)
+
+# Example usage
+numbers = [1, 2, 2, 3, 4, 5, 5, 5, 6]
+
+print(f"Mean: {calculate_mean(numbers)}")
+print(f"Median: {calculate_median(numbers)}")
+print(f"Mode: {calculate_mode(numbers)}")
+print(f"Range: {calculate_range(numbers)}")
+print(f"Variance: {calculate_variance(numbers)}")
+print(f"Standard Deviation: {calculate_std(numbers)}")
