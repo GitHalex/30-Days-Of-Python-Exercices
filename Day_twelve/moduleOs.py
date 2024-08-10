@@ -1,9 +1,14 @@
+""" # import the module
 import os
+# Creating a directory
+os.mkdir('directory_name')
+# Changing the current directory
+os.chdir('path')
+# Getting current working directory
+os.getcwd()
+# Removing directory
+os.rmdir() """
 
-#Creating a directory
-os.mkdir("directory_name")
-
-
-#Changing the current directory
-os.chdir('directory_name')
-
+import sys
+#print(sys.argv[0], argv[1],sys.argv[2])  # this line would print out: filename argument1 argument2
+print(f"welcome {sys.argv[0]}")
