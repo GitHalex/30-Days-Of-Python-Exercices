@@ -1,7 +1,9 @@
 from random import randint
 
+characteres = "abcdefghijklmnopqrstuwxyz123456789"
+
 def random_user_id() -> str:
-    characteres = "abcdefghijklmnopqrstuwxyz123456789"
+        
     id = ""
     for _ in range(6):
         aux = randint(0, len(characteres) - 1)
@@ -10,3 +12,20 @@ def random_user_id() -> str:
     return id
 
 print(random_user_id())
+
+
+def user_id_gen_by_user() -> None:
+    
+   
+    tam = int(input("Ingrese el tamaño: "))
+    cuantos = int(input("Cantidad de lineas: "))
+
+    
+    for i in range(cuantos):
+        id = "#"
+        for _ in range(tam):
+          aux = randint(0, len(characteres) - 1)
+          id += characteres[aux]
+        print(id)
+            
+user_id_gen_by_user()
