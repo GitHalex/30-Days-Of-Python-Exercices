@@ -38,3 +38,76 @@ def rgb_color_gen() -> str:
   return f"rgb{tuple(listaValor)}"
 
 print(rgb_color_gen())
+
+
+def list_of_hexa_colors(limite: int) -> list:
+   
+   hexadecimal = "1234567890ABCEDF"
+   arrHexa = []
+   for i in range(limite):
+      indice = 0
+      valor = "#"
+      for j in range(6):
+         indice = randint(0, len(hexadecimal) - 1)
+         valor += hexadecimal[indice]
+      arrHexa.append(valor)
+
+   return arrHexa
+      
+
+print(list_of_hexa_colors(3))
+
+def list_of_rgb_colors(limite: int) -> list:
+   listaResultado = []
+   for i in range(limite):
+      listaValor = []
+      for i in range(3):
+        numero = randint(0, 255)
+        listaValor.append(numero)
+
+      listaResultado.append(f"rgb{tuple(listaValor)}")
+
+   return list_of_rgb_colors
+
+print(list_of_rgb_colors(3))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
