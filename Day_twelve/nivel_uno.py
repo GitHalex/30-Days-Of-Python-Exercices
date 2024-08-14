@@ -71,6 +71,26 @@ def list_of_rgb_colors(limite: int) -> list:
 
 print(list_of_rgb_colors(3))
 
+def generate_colors(color: str, cantidad: int) -> list:
+   
+  if cantidad <= 0: 
+     return f"No puedes ingresar una cantidad menor o igual a 0 => {cantidad}"
+  
+  if color == "hexa":
+    lista = list_of_hexa_colors(cantidad)
+    return lista
+  elif color == "rgb":
+     lista = list_of_rgb_colors(cantidad)
+     return lista
+  else:
+    return f"color => {color} introducido no es valida"
+  
+print(generate_colors("hexa", 1))
+print(generate_colors("rgb", 2))
+print(generate_colors("otro", 1))
+
+        
+      
 
 
 
