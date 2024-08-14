@@ -91,16 +91,27 @@ print(generate_colors("otro", 1))
 
 def shuffle_list(lista: list) -> list:
   resultado = []
-  for elemento in lista:
+  for _ in lista:
       indice = randint(0, len(lista) - 1)
       resultado.append(lista[indice])
 
   return resultado
 
-print(shuffle_list([1,2,3,4]))
+print(shuffle_list([1,2,3,4, "alex" ]))
   
   
-        
+def listaUnicos() -> list:
+  listaNumeros = []
+  for _ in range(7):
+    numero = randint(0, 9)
+    if numero not in listaNumeros:
+      listaNumeros.append(numero)
+
+  return listaNumeros
+
+
+print(listaUnicos())
+  
       
 
 
