@@ -89,6 +89,17 @@ print(generate_colors("hexa", 1))
 print(generate_colors("rgb", 2))
 print(generate_colors("otro", 1))
 
+def shuffle_list(lista: list) -> list:
+  resultado = []
+  for elemento in lista:
+      indice = randint(0, len(lista) - 1)
+      resultado.append(lista[indice])
+
+  return resultado
+
+print(shuffle_list([1,2,3,4]))
+  
+  
         
       
 
