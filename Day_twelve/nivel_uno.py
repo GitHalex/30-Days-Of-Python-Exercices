@@ -67,9 +67,26 @@ def list_of_rgb_colors(limite: int) -> list:
 
       listaResultado.append(f"rgb{tuple(listaValor)}")
 
-   return list_of_rgb_colors
+   return listaResultado
 
 print(list_of_rgb_colors(3))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
