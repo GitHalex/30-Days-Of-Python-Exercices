@@ -55,3 +55,7 @@ list_of_lists =[[[1, 2, 3]], [[4, 5, 6]], [[7, 8, 9]]]
 
 only = [x for sublist in list_of_lists for inner_list in sublist for  x in inner_list]
 print(only)
+
+# It is also possible to make a list of tuples
+numbers = [(i, i ** 0, i**1, i**2, i**3, i**4, i**5) for i in range(11)]
+print(numbers)  
