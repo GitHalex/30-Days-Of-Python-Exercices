@@ -59,3 +59,5 @@ print(only)
 # It is also possible to make a list of tuples
 numbers = [(i, i ** 0, i**1, i**2, i**3, i**4, i**5) for i in range(11)]
 print(numbers)  
+
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
