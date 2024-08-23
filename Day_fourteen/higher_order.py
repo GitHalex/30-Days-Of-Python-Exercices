@@ -14,3 +14,14 @@ for number  in numbers:
 mayusculas = list(map(lambda pais: pais.upper(), countries))
 print(mayusculas)
 
+
+square = map(lambda number: number ** 2, numbers)
+print(list(square))
+
+def namesMayuscula(name):
+  return name.upper()
+
+namesMayusculas = map(namesMayuscula, names)
+print(list(namesMayusculas))
+
+
