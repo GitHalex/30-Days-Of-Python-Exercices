@@ -47,3 +47,46 @@ def add_ten():
 closure_result = add_ten()
 print(closure_result(5))  # 15
 print(closure_result(10))  # 20
+
+
+
+'''These decorator functions are higher order functions
+that take functions as parameters'''
+
+# First Decorator
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+
+# Second decorator
+def split_string_decorator(function):
+    def wrapper():
+        func = function()
+        splitted_string = func.split()
+        return splitted_string
+
+    return wrapper
+
+@split_string_decorator
+@uppercase_decorator     # order with decorators is important in this case - .upper() function does not work with lists
+def greeting():
+    return 'Welcome to Python'
+print(greeting())   # WELCOME TO PYTHON
+
+
+
+def decorator_with_parameters(function):
+    def wrapper_accepting_parameters(para1, para2, para3):
+        function(para1, para2, para3)
+        print("I live in {}".format(para3))
+    return wrapper_accepting_parameters
+
+@decorator_with_parameters
+def print_full_name(first_name, last_name, country):
+    print("I am {} {}. I love to teach.".format(
+        first_name, last_name, country))
+
+print_full_name("Asabeneh", "Yetayeh",'Finland')
