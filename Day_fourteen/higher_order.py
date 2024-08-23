@@ -37,3 +37,9 @@ print(otro)
 
 soloSeis = list(filter(lambda pais: len(pais) == 6, countries))
 print(soloSeis)
+
+masSeis = list(filter(lambda pais: len(pais) >= 7, countries))
+print(masSeis)
+
+empieza_E = list(filter(lambda pais: "E" in pais, countries))
+print(empieza_E)
