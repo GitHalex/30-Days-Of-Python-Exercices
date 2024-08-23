@@ -236,6 +236,17 @@ countriesPatron = filter(lambda pais: categoria_countries(pais, "land"), countri
 print(list(countriesPatron))
 
 
+def categorize_countries(pais: str, patron: str) -> str:
+    if patron in pais:
+        return pais
+    return None
+
+paises_patron = map(lambda pais: categorize_countries(pais, "land"), countries)
+# Filtramos los resultados para excluir los valores None
+paises_filtrados = filter(None, paises_patron)
+
+print(list(paises_filtrados))
+
 """ for pais in countries:
   print(pais)
 
