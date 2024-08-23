@@ -13,11 +13,13 @@ from functools import reduce  # Importar reduce desde functools
 
 def add(a, b):
     return a + b
-
 print(reduce(add, [1, 2, 3, 4]))  # 10
 
 sumaAll = reduce(lambda a, b: a+b, numbers)
 print(sumaAll)
+
+concatenacionCadenas = reduce(lambda ca1, ca2: ca1 +", "+ ca2, countries)
+print(f"{concatenacionCadenas} are north Europan countries")
 
 """ for pais in countries:
   print(pais)
