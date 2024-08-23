@@ -5,7 +5,19 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 usandoDistintasListas = filter(lambda pais: len(pais) == 6, map(lambda pais: pais.upper(), countries))
 print(list(usandoDistintasListas))
 
+listaDatos = ["Alex", "Calcina", 23, 2024]
+soloCadenas = filter(lambda i: isinstance(i, str) and i.isalpha(), listaDatos)
+print(list(soloCadenas))
 
+from functools import reduce  # Importar reduce desde functools
+
+def add(a, b):
+    return a + b
+
+print(reduce(add, [1, 2, 3, 4]))  # 10
+
+sumaAll = reduce(lambda a, b: a+b, numbers)
+print(sumaAll)
 
 """ for pais in countries:
   print(pais)
