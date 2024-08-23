@@ -25,3 +25,15 @@ namesMayusculas = map(namesMayuscula, names)
 print(list(namesMayusculas))
 
 
+def funcionFilter(pais):
+  if "land" in pais:
+    return True
+  
+countriesLand = filter(funcionFilter, countries)
+print(list(countriesLand))
+
+otro = list(filter(lambda pais: "land" in pais, countries))
+print(otro)
+
+soloSeis = list(filter(lambda pais: len(pais) == 6, countries))
+print(soloSeis)
