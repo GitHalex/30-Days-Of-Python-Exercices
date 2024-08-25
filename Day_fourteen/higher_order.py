@@ -247,6 +247,18 @@ paises_filtrados = filter(None, paises_patron)
 
 print(list(paises_filtrados))
 
+def diccionarioClave(listaPais: str) -> dict:
+
+  for pais in listaPais:
+     return {pais[0], pais}
+
+listaPais = ["Bolivia", "Peru"]
+print(diccionarioClave(listaPais))
+
+paisDic = map(diccionarioClave, countries)
+print(list(paisDic))
+
+
 """ for pais in countries:
   print(pais)
 
