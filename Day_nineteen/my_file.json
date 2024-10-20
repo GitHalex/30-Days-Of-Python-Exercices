@@ -1,0 +1,11 @@
+{
+  "name": "Alex",
+  "surname": "Lopez",
+  "age": 23,
+  "language": [
+    "Python",
+    "Java",
+    "NodeJS"
+  ],
+  "website": "https://moure.dev"
+}
