@@ -14,7 +14,7 @@ print(f"tamaño: {len(company)}")
 
 print(f"En MAYUSCULAS: {company.upper()}")
 
-print(f"EN MINUSCULAS: {company.lower()}")
+print(f"En minuscualas: {company.lower()}")
 
 print(f"capitalize: {company.capitalize()} => title: {company.title()} => swapcase: {company.swapcase()}")
 
