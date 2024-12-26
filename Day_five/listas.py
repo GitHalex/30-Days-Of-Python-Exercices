@@ -22,7 +22,7 @@ it_companies[0] = "Meta"
 print(it_companies)
 # Add an IT company to it_companies
 it_companies.append("HH")
-# Insert an IT company in the middle of the companies list
+# Insert an IT company in the middle of the companies list!
 it_companies.insert(3, "CloudLex")
 # Change one of the it_companies names to uppercase (IBM excluded!)
 print(it_companies[0].upper())
